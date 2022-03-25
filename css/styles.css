@@ -1,0 +1,218 @@
+/** importing fonts from google*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+/* Set the box-sizing property for the entire page so that
+ * width calculations include everything up until the
+ * border.
+ */
+html {
+    box-sizing:border-box; /* content-box is default */
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.3em;
+    margin: 0;
+    font-size:1.3em;
+}
+/** General utility styles */
+h2{
+    font-size:2.5em;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: aqua
+}
+a:hover{
+    color: chocolate
+}
+a:active{
+    color: fuchsia
+}
+/**Header styles */
+header{
+    display:flex;
+    justify-content: space-between;
+    height: 4em;
+    align-items:center;
+    width:100%;
+    border: solid;
+
+}
+#logo{
+    font-size:1.3em;
+    margin: 10px 15px 15px 10px;
+}
+#header {
+    padding:1em;
+}
+nav {
+    display: flex;
+}
+nav li {
+    display: inline-block;
+    padding: 1em;
+    position:relative;
+    vertical-align:top;
+}
+
+/** Main styles */
+main{
+    border: solid red;
+}
+
+/** Banner styles*/
+#banner{
+    border: solid blue;
+    width: auto;
+    height: 620px;
+}
+
+/** slogan */
+#slogan{
+    border: solid green;
+}
+
+/** popular-menu */
+#popular-menu {
+    border: solid purple;
+}
+.popular-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    height: 350px;
+}
+
+.menu-image{
+    border: solid cyan;
+    padding: 10px;
+
+}
+
+/**featured patterns */
+#featured-patterns{
+    border: solid black;
+}
+.featured-patterns{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    gap: 15px;
+    justify-content: center;
+}
+.pattern-logo{
+    border: solid cyan;
+    height: 60px;
+
+}
+
+/**Gallery*/
+#gallery{
+    border: solid yellow;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    height: 400px;
+}
+#big-image{
+    border: solid black;
+}
+.gallery-thumbnails{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.gallery-image{
+    border: solid black;
+}
+
+/**Reservations*/
+#reservations{
+    border: solid red;
+    text-align: center;
+}
+.reservation-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    border: solid green;
+
+}
+
+/**events*/
+#events{
+    border: solid saddlebrown;
+    background-color: darkgrey;
+    text-align: center;
+    padding: 50px 0 100px 0;
+
+}
+.events-images{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    height: 240px ;
+    gap: 10px;
+}
+.event-image{
+    border: solid black;
+}
+
+/**footer*/
+footer{
+    border: solid aquamarine;
+    width: auto;
+    background-color: #3b3838;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.footer-section{
+    display: grid;
+    grid-template-columns: 400px 500px 400px;
+    justify-content: center;
+    height: 340px ;
+    gap: 10px;
+    color: #ffffff;
+    padding: 70px 0px;
+}
+#extra-links{
+    border: solid blue;
+
+}
+#address{
+    border: solid blue;
+
+}
+#social-media{
+    border: solid blue;
+
+}
+
+#footer-bar{
+    background-color: black;
+}
+.footer-bottom{
+    text-align: center;
+    color: #fff;
+}
+.footer-bottom li {
+    display: inline-block;
+    padding: 1em;
+    position:relative;
+    vertical-align:top;
+}
