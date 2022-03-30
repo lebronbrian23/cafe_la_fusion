@@ -1,8 +1,12 @@
 /** importing fonts from google
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 */
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
 /* Set the box-sizing property for the entire page so that
  * width calculations include everything up until the
  * border.
@@ -86,7 +90,6 @@ a:active{
     grid-template-areas: 'logo nav-links';
     height: 4em;
     align-items:center;
-
     width: auto;
 }
 nav ul {
@@ -119,37 +122,37 @@ main{
 }
 
 /** Banner styles*/
-#banner-image {
+#banner-image{
     grid-area: banner-image;
 }
 .banner-image{
-
-    width: 804.41px;
-    height: 730.76px;
+    width: 824.41px;
+    max-height: 384px;
     left: 238.92px;
-    top: 609px;
-
     filter: drop-shadow(-5px -10px 4px rgba(0, 0, 0, 0.25));
-    transform: matrix(0.86, -0.48, 0.52, 0.87, 0, 0);
+    object-fit: cover;
+    object-position: 100% 0;
+
 }
 #banner-text{
+    color: #BFE4FF;
     grid-area: banner-text;
     font-family: 'Bebas Neue';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 50px;
     line-height: 30px;
-    color: #BFE4FF;
-    text-align: center;
+    text-transform: uppercase;
 }
 #banner{
+    text-transform: uppercase;
     display: grid;
     grid-template-areas:
             'banner-text'
             'banner-image';
-    height: 620px;
+    height: 600px;
     background-color: #163756;
-
+    text-align: center;
 }
 
 /** slogan */
@@ -346,19 +349,37 @@ footer{
     #header-nav .menu-links.show-mobile-menu{
         display: block;
     }
+    /*banner media queries*/
+    #banner {
+        height: 500px;
+    }
+    .banner-image{
+        width: 624.41px;
+        max-height: 290px;
+        left: 138.92px;
+    }
 }
 
 @media screen and (max-width: 720px) {
 
+
     /*banner media queries*/
     #banner{
-        height: 400px;
+        height: 300px;
         grid-template-areas:
                 'banner-text'
                 'banner-image';
     }
-    .banner-text .banner-image{
-        height: auto;
+    .banner-image{
+        width: calc(824.41px /2);
+        max-height: calc(384px/2);
+        left: calc(238.92px/2);
+    }
+    #banner-text{
+        color: #BFE4FF;
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 15px;
     }
 
 
