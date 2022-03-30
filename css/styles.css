@@ -1,6 +1,8 @@
-/** importing fonts from google*/
+/** importing fonts from google
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+*/
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&display=swap');
 /* Set the box-sizing property for the entire page so that
  * width calculations include everything up until the
  * border.
@@ -43,6 +45,7 @@ a:active{
     font-size:1.3em;
     margin: 10px 15px 15px 10px;
     grid-area: logo;
+    white-space: nowrap;
 }
 
 #header-nav {
@@ -256,7 +259,7 @@ footer{
     vertical-align:top;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     /*menu media queries*/
     #header{
         position: relative;
@@ -279,6 +282,10 @@ footer{
     #header-nav .menu-links.show-mobile-menu{
         display: block;
     }
+}
+
+@media screen and (max-width: 720px) {
+
     /*banner media queries*/
     #banner{
         height: 400px;
