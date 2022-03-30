@@ -335,7 +335,7 @@ footer{
 @media screen and (max-width: 820px) {
     html, body {
         width:100%;
-        margin-left:0;
+        margin:0;
     }
     /*menu media queries*/
    .nav-container{
@@ -371,7 +371,10 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
-
+    html, body {
+        width:100%;
+        margin:0;
+    }
     /*banner media queries*/
     #banner{
         height: 300px;
@@ -440,7 +443,10 @@ footer{
 }
 
 @media screen and (max-width: 380px) {
-
+    html, body {
+        width:100%;
+        margin:0;
+    }
     /*banner media queries*/
     #banner{
         height: 300px;
