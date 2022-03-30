@@ -49,7 +49,9 @@ a:hover{
 a:active{
     color: fuchsia
 }
-
+strong{
+    color: white;
+}
 /**Header styles */
 /*.working-hours-desc1{
     grid-area: working-hours-desc1;
@@ -79,9 +81,7 @@ a:active{
     grid-area: nav-links;
 }
 #header{
-    /* The image used */
     background-color: #163756;
-    /* Needed to position the navbar */
     position: relative;
 }
 
@@ -94,7 +94,6 @@ a:active{
 }
 nav ul {
     white-space: nowrap;
-    color: #ffffff;
 }
 nav li {
     text-transform: uppercase;
@@ -106,6 +105,11 @@ nav li {
     display: none;
     padding:1em;
     margin-right: 10px;
+    background-color: #163756;
+    border:  solid;
+    border-color: #17334d;
+    border-radius: 50%;
+    color: white;
 }
 #book-table{
     padding: 10px;
@@ -362,7 +366,6 @@ footer{
 
 @media screen and (max-width: 720px) {
 
-
     /*banner media queries*/
     #banner{
         height: 300px;
@@ -381,7 +384,6 @@ footer{
         font-size: 25px;
         line-height: 15px;
     }
-
 
     /*featured patterns media queries*/
     .featured-patterns{
