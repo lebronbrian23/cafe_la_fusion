@@ -139,12 +139,14 @@ main{
 
 }
 #banner-text{
-    color: #BFE4FF;
     grid-area: banner-text;
+}
+#banner-text > h2{
+    font-size: 50px;
+    color: #BFE4FF;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -382,7 +384,8 @@ footer{
         max-height: calc(384px/2);
         left: calc(238.92px/2);
     }
-    #banner-text{
+    #banner-text > h2
+    {
         color: #BFE4FF;
         font-weight: 200;
         font-size: 25px;
