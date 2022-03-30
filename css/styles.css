@@ -53,9 +53,11 @@ a:active{
     grid-template-areas: 'logo nav-links';
     height: 4em;
     align-items:center;
-    /*padding:1em;*/
-}
 
+}
+nav ul {
+    white-space: nowrap;
+}
 nav li {
     display: inline-block;
     padding: 1em;
@@ -64,6 +66,8 @@ nav li {
 }
 .menu-toggle{
     display: none;
+    padding:1em;
+    margin-right: 10px;
 }
 
 /** Main styles */
