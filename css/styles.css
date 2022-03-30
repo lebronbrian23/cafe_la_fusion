@@ -119,18 +119,20 @@ main{
 }
 
 /** Banner styles*/
-.banner-image{
+#banner-image {
     grid-area: banner-image;
-    /*background: url('/images/plate1.png');
+}
+.banner-image{
+
     width: 804.41px;
     height: 730.76px;
     left: 238.92px;
     top: 609px;
 
     filter: drop-shadow(-5px -10px 4px rgba(0, 0, 0, 0.25));
-    transform: matrix(0.86, -0.48, 0.52, 0.87, 0, 0);*/
+    transform: matrix(0.86, -0.48, 0.52, 0.87, 0, 0);
 }
-.banner-text{
+#banner-text{
     grid-area: banner-text;
     font-family: 'Bebas Neue';
     font-style: normal;
