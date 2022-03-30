@@ -15,14 +15,19 @@ html {
 }
 
 body{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
     line-height: 1.3em;
     margin: 0;
     font-size:1.3em;
+    align-items: center;
+    letter-spacing: 0.04em;
 }
 /** General utility styles */
 h2{
-    font-size:2.5em;
+    font-size:2em;
 }
 
 li{
@@ -40,7 +45,25 @@ a:hover{
 a:active{
     color: fuchsia
 }
+
 /**Header styles */
+/*.working-hours-desc1{
+    grid-area: working-hours-desc1;
+}
+.working-hours-desc2{
+    grid-area: working-hours-desc2;
+}
+.working-hours-desc3{
+    grid-area: working-hours-desc3;
+}
+.working-hours{
+    display: grid;
+    grid-template-areas: 'grid-area: working-hours-desc1 grid-area: working-hours-desc2 grid-area: working-hours-desc3';
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    color: white;
+}
+*/
 #logo{
     font-size:1.3em;
     margin: 10px 15px 15px 10px;
@@ -52,47 +75,89 @@ a:active{
     grid-area: nav-links;
 }
 #header{
+    /* The image used */
+    background-color: #163756;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.nav-container{
     display: grid;
     grid-template-areas: 'logo nav-links';
     height: 4em;
     align-items:center;
 
+    width: auto;
 }
 nav ul {
     white-space: nowrap;
+    color: #ffffff;
 }
 nav li {
+    text-transform: uppercase;
     display: inline-block;
-    padding: 1em;
+    padding: 0.9em;
     position:relative;
-    vertical-align:top;
 }
 .menu-toggle{
     display: none;
     padding:1em;
     margin-right: 10px;
 }
+#book-table{
+    padding: 10px;
+    width: 214px;
+    height: 44px;
+    background: #F46A06;
+    border-radius: 4px;
+    text-align: center;
+}
 
 /** Main styles */
 main{
-    border: solid red;
+
 }
 
 /** Banner styles*/
+.banner-image{
+    grid-area: banner-image;
+    /*background: url('/images/plate1.png');
+    width: 804.41px;
+    height: 730.76px;
+    left: 238.92px;
+    top: 609px;
+
+    filter: drop-shadow(-5px -10px 4px rgba(0, 0, 0, 0.25));
+    transform: matrix(0.86, -0.48, 0.52, 0.87, 0, 0);*/
+}
+.banner-text{
+    grid-area: banner-text;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 30px;
+    color: #BFE4FF;
+    text-align: center;
+}
 #banner{
-    border: solid blue;
-    width: auto;
+    display: grid;
+    grid-template-areas:
+            'banner-text'
+            'banner-image';
     height: 620px;
+    background-color: #163756;
+
 }
 
 /** slogan */
 #slogan{
-    border: solid green;
+    text-align: center;
 }
 
 /** popular-menu */
 #popular-menu {
-    border: solid purple;
+    text-align: center;
 }
 .popular-menu {
     display: grid;
@@ -112,12 +177,11 @@ main{
 .menu-image1 ,.menu-image2 ,.menu-image3{
     border: solid cyan;
     padding: 10px;
-
 }
 
 /**featured patterns */
 #featured-patterns{
-    border: solid black;
+    text-align: center;
 }
 .pattern-logo1{
     grid-area: pattern-logo1;
@@ -149,7 +213,7 @@ main{
 
 /**Gallery*/
 #gallery{
-    border: solid yellow;
+    text-align: center;
 }
 #big-image{
     border: solid black;
@@ -182,7 +246,6 @@ main{
 
 /**Reservations*/
 #reservations{
-    border: solid red;
     text-align: center;
 }
 .reservation-form{
@@ -196,7 +259,6 @@ main{
 
 /**events*/
 #events{
-    border: solid saddlebrown;
     background-color: darkgrey;
     text-align: center;
     padding: 50px 0 100px 0;
@@ -222,7 +284,6 @@ main{
 
 /** footer*/
 footer{
-    border: solid aquamarine;
     width: auto;
     background-color: #3b3838;
 }
@@ -240,6 +301,7 @@ footer{
 #address{
     border: solid blue;
     grid-area: address;
+    border-left: black solid 13px;
 }
 #social-media{
     border: solid white;
@@ -261,7 +323,7 @@ footer{
 
 @media screen and (max-width: 820px) {
     /*menu media queries*/
-    #header{
+   .nav-container{
         position: relative;
     }
     .menu-toggle{
@@ -289,7 +351,15 @@ footer{
     /*banner media queries*/
     #banner{
         height: 400px;
+        grid-template-areas:
+                'banner-text'
+                'banner-image';
     }
+    .banner-text .banner-image{
+        height: auto;
+    }
+
+
     /*featured patterns media queries*/
     .featured-patterns{
         grid-template-areas:
