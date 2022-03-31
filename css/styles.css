@@ -444,7 +444,7 @@ footer{
 
 @media screen and (max-width: 380px) {
     html, body {
-        width:100%;
+        width: calc(100% + 2em);
         margin:0;
     }
     /*banner media queries*/
