@@ -443,9 +443,10 @@ footer{
 }
 
 @media screen and (max-width: 380px) {
-    html, body {
-        width: calc(100% + 2em);
-        margin:0;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
     /*banner media queries*/
     #banner{
