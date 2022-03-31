@@ -333,9 +333,13 @@ footer{
 }
 
 @media screen and (max-width: 820px) {
+    *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
     html, body {
-        width:100%;
-        margin:0;
+        overflow-x: hidden;
     }
     /*menu media queries*/
    .nav-container{
@@ -371,10 +375,7 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
-    html, body {
-        width:100%;
-        margin:0;
-    }
+
     /*banner media queries*/
     #banner{
         height: 300px;
@@ -443,17 +444,17 @@ footer{
 }
 
 @media screen and (max-width: 380px) {
-    *:after, *:before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    html, body {
-        overflow-x: hidden;
-    }
+
     /*banner media queries*/
     #banner{
         height: 300px;
+    }
+    #banner-text > h2
+    {
+        color: #BFE4FF;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 10px;
     }
 
     /*featured patterns media queries*/
