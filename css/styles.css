@@ -443,10 +443,13 @@ footer{
 }
 
 @media screen and (max-width: 380px) {
-    * {
+    *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    }
+    html, body {
+        overflow-x: hidden;
     }
     /*banner media queries*/
     #banner{
