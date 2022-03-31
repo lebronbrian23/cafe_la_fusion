@@ -336,7 +336,7 @@ footer{
 
     html, body {
         overflow-x: hidden;
-        width: calc(100% + 3rem);
+        width: calc(100% + 1rem);
     }
     /*menu media queries*/
    .nav-container{
