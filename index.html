@@ -22,7 +22,7 @@
     </div>-->
 
     <div class="nav-container">
-        <h1 id="logo">Cafe La fusion</h1>
+        <h1 id="logo"><a href="index.html">Cafe La fusion</a></h1>
         <nav id="header-nav" aria-label="Main navigation">
             <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
             <ul class="menu-links">
@@ -53,18 +53,24 @@
     <!-- The brief statement section  -->
     <div id="slogan">
         <h2>About</h2>
-        <p>la nourriture fait partie de nous</p>
-        <a href="#">View more</a>
+        <p style="padding: 0 245px">A wonderful blend of a vibrant Art-inspired dinner and a cosy soft Parisian-style café with a range of delicious cuisine. A one-of-a-kind restaurant  with a retro pop music experienceArts enthusiasts of all ages and journeys of life are invited to attend an exciting space jam-packed with events all year long.</p>
+        <a href="#">Learn more</a>
     </div>
     <!-- The brief statement section  -->
 
     <!-- The popular menu section  -->
     <section id="popular-menu">
-        <h2>Popular Menu</h2>
+        <h2>Our bestselling specialists</h2>
         <div class="popular-menu">
-            <div class="menu-image1">image 1</div>
-            <div class="menu-image2">image 2</div>
-            <div class="menu-image3">image 3</div>
+            <figure class="menu-image1">
+                <img src="images/icecream.jpeg" alt="cup of icecream">
+            </figure>
+            <figure class="menu-image2">
+                <img src="images/steak.jpeg" alt="roasted beef steak">
+            </figure>
+            <figure class="menu-image3">
+                <img src="images/waffle.jpeg" alt="a waffle on a plate">
+            </figure>
         </div>
     </section>
     <!-- end of popular menu section  -->
@@ -73,11 +79,10 @@
     <section id="featured-patterns">
         <h2>Featured In</h2>
         <div class="featured-patterns">
-           <div class="pattern-logo1">logo 1</div>
-            <div class="pattern-logo2">logo 2</div>
-            <div class="pattern-logo3">logo 3</div>
-            <div class="pattern-logo4">logo 4</div>
-            <div class="pattern-logo5">logo 5</div>
+           <div class="pattern-logo1">Vogue</div>
+            <div class="pattern-logo2">BlogTo</div>
+            <div class="pattern-logo3">Toronto Sun</div>
+            <div class="pattern-logo4">Narcity</div>
         </div>
     </section>
     <!-- end of featured in section  -->
@@ -86,48 +91,13 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery">
-            <div id="big-image">Big image </div>
-            <div class="gallery-image1">image 1</div>
-            <div class="gallery-image2">image 2</div>
-            <div class="gallery-image3">image 3</div>
-            <div class="gallery-image4">image 4</div>
+            <figure id="big-image"><img src="images/big-galley-photo.jpeg" alt="an empty diner"></figure>
+            <figure class="gallery-image1"><img src="images/galley-photo-1.jpeg" alt="artist mixing colors"></figure>
         </div>
-
 
     </section>
     <!-- end of gallery section  -->
 
-    <!-- The reservations section  -->
-    <section id="reservations">
-        <div>
-            <h2>Table Reservations</h2>
-            <h3>Secure your seat by reserving a table , no payment required</h3>
-        </div>
-        <div id="reservation-form">
-            <form class="reservation-form">
-                <div>
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text">
-                </div>
-                <div>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="tel">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email">
-                </div>
-                <div>
-                    <label for="seats">Number of seats</label>
-                    <input id="seats" name="seats" type="number">
-                </div>
-                <div>
-                    <button id="reservation-button">Reserve</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- end of reservations section  -->
 
     <!-- The events section  -->
     <section id="events">

@@ -32,6 +32,7 @@ body{
 /** General utility styles */
 h2{
     font-size:2em;
+    text-transform: uppercase;
 }
 
 li{
@@ -75,6 +76,7 @@ strong{
     margin: 10px 15px 15px 10px;
     grid-area: logo;
     white-space: nowrap;
+    color: #ffffff;
 }
 
 #header-nav {
@@ -156,7 +158,7 @@ main{
     grid-template-areas:
             'banner-text'
             'banner-image';
-    height: 600px;
+    height: 570px;
     background-color: #163756;
     text-align: center;
 }
@@ -173,31 +175,39 @@ main{
 .popular-menu {
     display: grid;
     grid-template-areas: 'menu-image1 menu-image2 menu-image3';
-    gap: 10px;
-    height: 350px;
+    height: 500px;
 }
 .menu-image1{
     grid-area: menu-image1;
+    margin-right:0;
 }
 .menu-image2{
     grid-area: menu-image2;
+    margin-right:0;
+    margin-left: 0;
 }
 .menu-image3{
     grid-area: menu-image3;
+    margin-left: 0;
 }
-.menu-image1 ,.menu-image2 ,.menu-image3{
-    border: solid cyan;
-    padding: 10px;
+.menu-image1>img ,.menu-image2>img ,.menu-image3>img{
+    width: 393px;
+    height: 402px;
+    border-radius: 8px;
+
 }
 
 /**featured patterns */
 #featured-patterns{
+    padding: 10px;
     text-align: center;
+    background: #F3F6F9;
+    height: 278px;
 }
 .pattern-logo1{
     grid-area: pattern-logo1;
 }
-.pattern-logo2{
+.pattern-logo2 {
     grid-area: pattern-logo2;
 }
 .pattern-logo3{
@@ -206,20 +216,20 @@ main{
 .pattern-logo4{
     grid-area: pattern-logo4;
 }
-.pattern-logo5{
-     grid-area: pattern-logo5;
-}
+
 .featured-patterns{
     display: grid;
-    grid-template-areas: 'pattern-logo1 pattern-logo2 pattern-logo3 pattern-logo4 pattern-logo5';
-    gap: 10px;
+    grid-template-areas: 'pattern-logo1 pattern-logo2 pattern-logo3 pattern-logo4';
+    gap: 120px;
     justify-content: center;
+    padding:30px;
+
 }
 
-.pattern-logo1, .pattern-logo2, .pattern-logo3 , .pattern-logo4 , .pattern-logo5{
-    border: solid cyan;
+.pattern-logo1,  .pattern-logo3 , .pattern-logo4 , .pattern-logo2{
     height: 60px;
-    width: 100px;
+    color: #F15A24;
+    text-transform: uppercase;
 }
 
 /**Gallery*/
@@ -227,32 +237,26 @@ main{
     text-align: center;
 }
 #big-image{
-    border: solid black;
     grid-area: big-image;
 }
 .gallery-image1{
     grid-area: gallery-image1;
 }
-.gallery-image2{
-    grid-area: gallery-image2;
-}
-.gallery-image3{
-    grid-area: gallery-image3;
-}
-.gallery-image4{
-    grid-area: gallery-image4;
-}
-.gallery{
-    display: grid;
-    grid-template-columns: 3fr 2fr 2fr;
-    grid-template-areas:
-            'big-image gallery-image1 gallery-image2'
-            'big-image gallery-image3 gallery-image4';
-    gap: 10px;
+.gallery-image1> img{
+    width: 499px;
     height: 400px;
 }
-.gallery-image1, .gallery-image2 ,.gallery-image3 ,.gallery-image4{
-    border: solid black;
+
+#big-image > img{
+    width: 710px;
+    height: 400px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-areas:'big-image gallery-image1';
+    justify-content: center;
+
 }
 
 /**Reservations*/
