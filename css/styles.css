@@ -274,7 +274,7 @@ main{
 
 /**events*/
 #events{
-    background-color: darkgrey;
+    background-color: #F3F6F9;;
     text-align: center;
     padding: 50px 0 100px 0;
 }
@@ -284,43 +284,53 @@ main{
 .event-image2{
     grid-area: event-image2;
 }
+.event-image2 > img , .event-image1 > img{
+    width: 604px;
+    height: 261.83px;
+    margin: 0;
+}
 .events-images{
     display: grid;
     grid-template-areas: 'event-image1 event-image2';
-    grid-template-columns: 320px 320px;
     justify-content: center;
-    height: 240px;
-    gap: 10px;
+    gap: 5px;
 }
-.event-image1,.event-image2{
-    border: solid black;
-    width: 100%;
+#view-calender{
+    padding-top: 45px;
 }
-
+.monthly-calender{
+    position: relative;
+    padding: 15px;
+    background-color: #F54901;
+    color: #ffffff;
+    border-radius: 4px;
+}
 /** footer*/
 footer{
     width: auto;
-    background-color: #3b3838;
+    background-color: #000;
 }
 .footer-section{
     display: grid;
-    grid-template-areas: 'extra-links address social-media';
+    grid-template-areas: 'footer-logo extra-links address ';
     gap: 10px;
     color: #ffffff;
     padding: 70px 0;
 }
 #extra-links{
-    border: solid blue;
+    text-transform: uppercase;
     grid-area: extra-links;
+}
+#extra-links > ul > li >a{
+    color: #ffffff;
 }
 #address{
     border: solid blue;
     grid-area: address;
-    border-left: black solid 13px;
 }
-#social-media{
+#footer-logo{
     border: solid white;
-    grid-area: social-media;
+    grid-area: footer-logo;
 
 }
 #footer-bar{
