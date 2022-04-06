@@ -40,7 +40,7 @@ a{
     text-decoration: none;
 }
 a:visited{
-    color: aqua
+    color: black
 }
 a:hover{
     color: chocolate
@@ -76,15 +76,16 @@ strong{
     white-space: nowrap;
     color: #ffffff;
     padding-left: 20px;
+    padding-bottom: 10px;
 }
-#logo >a >img{
-    height:66px ;
+#logo > a >img{
+    height:64px ;
 }
 #header-nav {
     grid-area: nav-links;
 }
 #header{
-    background-color: #163756;
+    background-color: #FF674E;
     position: relative;
 }
 
@@ -103,6 +104,8 @@ nav li {
     display: inline-block;
     padding: 0.9em;
     position:relative;
+    font-family: 'Bebas Neue';
+
 }
 .menu-toggle{
     display: none;
@@ -158,14 +161,14 @@ main{
     line-height: 30px;
     text-transform: uppercase;
 }
-.default-banner{
+.blue-banner{
     text-transform: uppercase;
     display: grid;
     grid-template-areas:
             'banner-text'
             'banner-image';
     height: 570px;
-    background-color: #163756;
+    background-color: #C373A3;
     color: #BFE4FF;
     text-align: center;
 }
@@ -349,11 +352,13 @@ main{
 }
 .event-image1{
     grid-area: event-image1;
+    width: 604px;
 }
 .event-image2{
     grid-area: event-image2;
+    width: 604px;
 }
-.event-image2 > img , .event-image1 > img{
+.event-image2 > figure > img , .event-image1 >figure > img{
     width: 604px;
     height: 261.83px;
     margin: 0;
@@ -363,8 +368,16 @@ main{
     display: grid;
     grid-template-areas: 'event-image1 event-image2';
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
+.event-info{
+    position: relative;
+    left: 77px;
+    color: #FFFFFF;
+    bottom: 135px;
+    text-align: left;
+}
+
 #view-calender{
     padding-top: 45px;
 }

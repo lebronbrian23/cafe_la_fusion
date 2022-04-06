@@ -7,27 +7,57 @@ function toggleMenu(){
     menu.classList.toggle("show-mobile-menu");
 }
 
-// variable declarartion
+// variable declaration
+let navbar = document.getElementById('header');
 let slideIndex = 1;
+let slides = document.getElementsByClassName("slides");
+
 showSlides(slideIndex);
 
-//fucntion to show next slide
+//function to show next slide
 function nextSlide(n) {
-    showSlides(slideIndex += n);
+    showNextSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides() {
     let i;
-    let slides = document.getElementsByClassName("slides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 5000);
+
+    if(slideIndex === 1)
+        navbar.style.background = '#FF674E'
+    if(slideIndex === 2)
+        navbar.style.background = '#FDBA2A'
+    if(slideIndex === 3)
+        navbar.style.background = '#C373A3'
+}
+
+function showNextSlides(n) {
+    let i;
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
-    //setTimeout(showSlides, 4000);
+
+    if(slideIndex === 1)
+        navbar.style.background = '#FF674E'
+    if(slideIndex === 2)
+        navbar.style.background = '#FDBA2A'
+    if(slideIndex === 3)
+        navbar.style.background = '#C373A3'
+
 }
