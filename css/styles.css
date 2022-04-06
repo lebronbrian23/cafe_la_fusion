@@ -199,7 +199,7 @@ main{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -317,11 +317,15 @@ main{
 .gallery-image1> img{
     width: 499px;
     height: 400px;
+    border-radius: 6px;
+
 }
 
 #big-image > img{
     width: 710px;
     height: 400px;
+    border-radius: 6px;
+
 }
 
 .gallery{
