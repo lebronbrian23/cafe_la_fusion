@@ -77,8 +77,11 @@ strong{
     grid-area: logo;
     white-space: nowrap;
     color: #ffffff;
+    padding-left: 20px;
 }
-
+#logo >a >img{
+    height:66px ;
+}
 #header-nav {
     grid-area: nav-links;
 }
@@ -108,10 +111,10 @@ nav li {
     padding:1em;
     margin-right: 10px;
     background-color: #163756;
-    border:  solid;
-    border-color: #17334d;
+    border: solid #17334d;
     border-radius: 50%;
     color: white;
+
 }
 #book-table{
     padding: 10px;
@@ -167,7 +170,21 @@ main{
 #slogan{
     text-align: center;
 }
+#slogan > p{
+    padding: 0 245px;
+}
 
+.learn-more-btn{
+    width: 180px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 0 0 4.87884px 0.975767px rgba(102, 100, 100, 0.27);
+    border-radius: 4px;
+    padding: 10px;
+}
+.angle_right_custom{
+ padding-left: 15px;
+}
 /** popular-menu */
 #popular-menu {
     text-align: center;
@@ -288,6 +305,7 @@ main{
     width: 604px;
     height: 261.83px;
     margin: 0;
+    border-radius: 6px;
 }
 .events-images{
     display: grid;
@@ -304,6 +322,9 @@ main{
     background-color: #F54901;
     color: #ffffff;
     border-radius: 4px;
+}
+.monthly-calender:hover{
+    color: black
 }
 /** footer*/
 footer{
@@ -340,16 +361,16 @@ footer{
     font-weight: bold;
 }
 #address > form > div > input[type="email"]{
-    width: 300px;
+    width: 270px;
     height: 39px;
     background-color: #3E3E3E;
     border-radius: 8px;
     border: thin;
     color: #ffffff;
-    margin-right: 33px;
+    margin-right: 37px;
 }
 #address > form > div > input[type="submit"]{
-    width: 156px;
+    width: 140px;
     height: 39px;
     background-color: #E5E5E5;
     border-radius: 8px;
@@ -357,9 +378,7 @@ footer{
     border: none;
 }
 #footer-logo{
-    border: solid white;
     grid-area: footer-logo;
-
 }
 .payment-options{
     grid-area: payment-options;
@@ -401,6 +420,7 @@ footer{
     .menu-toggle{
         display: block;
         float: right;
+        padding-right: 25px;
     }
     #header-nav .menu-links{
         display: none;
