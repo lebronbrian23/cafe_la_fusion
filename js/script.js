@@ -34,7 +34,7 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
 
-    setTimeout(showSlides, 10000);
+    setTimeout(showSlides, 20000);
 
     if(slideIndex === 1)
         navbar.style.background = '#FF674E'

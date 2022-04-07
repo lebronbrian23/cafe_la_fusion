@@ -141,33 +141,27 @@ main{
 }
 .banner-image{
     grid-area: banner-image;
+    height: 620px;
 }
 
-.banner-image > img{
-    max-height: 384px;
-    width: 824.41px;
-    filter: drop-shadow(-5px -10px 4px rgba(0, 0, 0, 0.25));
-    object-fit: cover;
-    object-position: 100% 0;
-}
 .banner-text{
     grid-area: banner-text;
 }
 .banner-text > h2{
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 27px;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
-.blue-banner{
+.purple-banner{
     text-transform: uppercase;
     display: grid;
     grid-template-areas:
             'banner-text'
             'banner-image';
-    height: 570px;
     background-color: #C373A3;
     color: #BFE4FF;
     text-align: center;
@@ -178,7 +172,6 @@ main{
     grid-template-areas:
             'banner-text'
             'banner-image';
-    height: 570px;
     background-color: #FDBA2A;
     text-align: center;
     color: #FFFFFF;
@@ -189,7 +182,6 @@ main{
     grid-template-areas:
             'banner-text'
             'banner-image';
-    height: 570px;
     background-color: #FF674E;
     text-align: center;
     color: #FFFFFF;
@@ -199,7 +191,7 @@ main{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
