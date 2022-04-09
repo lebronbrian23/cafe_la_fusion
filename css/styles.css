@@ -89,6 +89,11 @@ strong{
     position: relative;
 }
 
+#inner-header{
+    background-color: #163756;
+    position: relative;
+}
+
 .nav-container{
     display: grid;
     grid-template-areas: 'logo nav-links';
@@ -132,9 +137,7 @@ main{
 }
 
 /** Banner styles*/
-#banner{
 
-}
 .slides{
     display: none;
     padding:1px;
@@ -187,6 +190,25 @@ main{
     color: #FFFFFF;
 }
 
+#inner-banner{
+    background-color: #163756;
+    height: 300px;
+    padding:1px;
+}
+.blue-banner{
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #163756;
+}
+.blue-banner > div > h2 {
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 79px;
+    text-align: center;
+    letter-spacing: 0.03em
+}
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -213,7 +235,24 @@ main{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+/** sub menu */
+.submenu{
+    position: relative;
+    height: 68px;
+    background: #BFE4FF;
+}
+.submenu-links{
+    white-space: nowrap;
+    margin: 0;
+}
+.submenu-links > li{
+    display: inline-block;
+    padding: 0.9em;
+}
+.submenu-links > li > a > strong{
+    color: black;
 
+}
 /** slogan */
 #slogan{
     text-align: center;
