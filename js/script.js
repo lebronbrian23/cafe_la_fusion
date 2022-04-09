@@ -19,8 +19,8 @@ function nextSlide(n) {
     showNextSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(number) {
+    showSlides(slideIndex = number);
 }
 
 function showSlides() {
@@ -44,10 +44,10 @@ function showSlides() {
         navbar.style.background = '#C373A3'
 }
 
-function showNextSlides(n) {
+function showNextSlides(number) {
     let i;
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (number > slides.length) {slideIndex = 1}
+    if (number < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
