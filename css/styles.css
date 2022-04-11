@@ -285,6 +285,17 @@ main{
 .angle_right_custom{
  padding-left: 15px;
 }
+/** about us page */
+#about-us > p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+#about-us > p > strong{
+    color: #000000;
+}
 /** popular-menu */
 #popular-menu {
     text-align: center;
@@ -314,7 +325,7 @@ main{
 
 }
 /* menu page styles */
-#menu-list{
+#menu-list ,#about-us{
     margin: 0em 5em;
 }
 .menu-image1{
@@ -356,7 +367,7 @@ main{
     padding:30px;
 }
 .menu-description > table {
-    width: 430px;
+    width: 550px;
 }
  .menu-description >table > tbody > tr{
      height: 2em;
@@ -372,6 +383,7 @@ main{
     height: 600px;
     border-radius: 6px;
 }
+
 .menu-item-2{
     display: grid;
     grid-template-areas:  'menu-image2 menu-description';
@@ -380,6 +392,33 @@ main{
     padding:30px;
 }
 
+.menu-image4 > img{
+    width: 445px;
+    height: 460px;
+    border-radius: 6px;
+}
+.menu-image4{
+    position: relative;
+    top:3em;
+}
+.menu-image5 > img{
+    width: 445px;
+    height: 628px;
+    border-radius: 6px;
+}
+.menu-image5{
+    position: relative;
+    top:2em;
+}
+.menu-image6 > img{
+    width: 445px;
+    height: 628px;
+    border-radius: 6px;
+}
+.menu-image6{
+    position: relative;
+    top:2em;
+}
 /**featured patterns */
 #featured-patterns{
     padding: 10px;
