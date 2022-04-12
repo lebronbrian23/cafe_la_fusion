@@ -286,7 +286,21 @@ main{
  padding-left: 15px;
 }
 /** about us page */
-#about-us > p{
+.videos{
+    background-color: #BFE4FF;
+    grid-area: videos;
+    width: 568px;
+}
+.story{
+    grid-area: story;
+    width: 568px;
+}
+#our-story{
+    display: grid;
+    grid-template-areas: 'videos story';
+    gap:20px
+}
+#about-us > p , .story > p , .story > div > p {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
@@ -296,10 +310,62 @@ main{
 #about-us > p > strong{
     color: #000000;
 }
-
+#about-us{
+     margin: 2em 5em;
+ }
 #our-chef{
-
+    grid-template-areas: 'chef-bio chef-pic';
+    display: grid;
+    gap:20px
 }
+.chef-bio{
+    grid-area: chef-bio;
+}
+.chef-bio > h2 , .story > h2{
+    color: red;
+}
+
+.chef-bio > h3 >span{
+    font-family: 'Work Sans';
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.chef-bio > p{
+    font-size: 17px;
+    line-height: 20px;
+}
+.chef-bio > p > strong , .story > p > strong{
+    color: black;
+}
+.chef-pic{
+    grid-area: chef-pic;
+    width: 501px;
+    background-color: #BFE4FF;
+}
+#view-our-menu{
+    padding-top: 45px;
+}
+.view-our-menu-btn{
+    position: relative;
+    padding: 15px;
+    background-color: #F54901;
+    color: #ffffff !important;
+    border-radius: 4px;
+}
+.view-our-menu-btn:hover{
+    color: black !important
+}
+/** end of menu **/
+
+/** New and media **/
+.media{
+    font-family: 'Work Sans';
+}.
+.media-1  > figure > figcaption{
+    font-weight: bold !important;
+    font-size: 50px !important;
+ }
+/**End of news and media **/
 /** popular-menu */
 #popular-menu {
     text-align: center;
@@ -329,7 +395,7 @@ main{
 
 }
 /* menu page styles */
-#menu-list ,#about-us{
+#menu-list {
     margin: 0em 5em;
 }
 .menu-page-image1{
@@ -346,21 +412,21 @@ main{
     grid-area: menu-description;
 
 }
-.menu-description > h3 > strong{
+h3 > strong{
     color: #000;
     line-height: 100px;
     align-items: center;
     letter-spacing: 0.2px;
     font-size: 48px;
 }
-.menu-description > h3 > span{
+h3 > span{
     line-height: 100px;
     align-items: center;
     letter-spacing: 0.2px;
     font-size: 24px;
     padding-left: 2em;
 }
-.menu-description > p  , .menu-description >table{
+.menu-description > p  , .menu-description >table ,.chef-bio > p{
     font-family:   'Work Sans';
 }
 .menu-item-1{
@@ -378,7 +444,7 @@ main{
  }
 
 .menu-page-image2{
-    grid-area: menu-image2;
+    grid-area: menu-page-image2;
     position: relative;
     top:5em;
 }
@@ -534,17 +600,17 @@ main{
     text-align: left;
 }
 
-#view-calender ,#view-our-menu{
+#view-calender{
     padding-top: 45px;
 }
-.monthly-calender .view-our-menu-btn{
+.monthly-calender {
     position: relative;
     padding: 15px;
     background-color: #F54901;
     color: #ffffff;
     border-radius: 4px;
 }
-.monthly-calender:hover .view-our-menu-btn:hover{
+.monthly-calender:hover {
     color: black
 }
 /** footer*/
