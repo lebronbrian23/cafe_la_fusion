@@ -710,7 +710,7 @@ h3 > span{
 #host-event ,#featured-artists{
     margin: 2em 5em;
 }
-#host-event > h2 ,.featured-artist-info > h2 {
+#host-event > h2 ,.featured-artist-info > h2 ,.business-partner-heading > h2 ,.get-in-touch-heading > h2{
     color: red;
 }
 .private-dinner{
@@ -777,10 +777,10 @@ h3 > span{
     gap: 10px;
 }
 
-#be-featured-artist ,#chef-background-img{
+#be-featured-artist ,#chef-background-img ,#contact-form-vector{
     background-image: url("/images/vector-backgroud.png");
 }
-.featured-artist-info > p , #featured-artists > p{
+.featured-artist-info > p , #featured-artists > p ,#business-partner > p ,.business-partner-info ,.get-in-touch-info{
     font-family: 'Work Sans';
     font-size: 16px;
 }
@@ -831,6 +831,106 @@ h3 > span{
     position: relative;
     bottom: 180px;
     right: 122%;
+}
+#business-partner ,#get-in-touch{
+    margin: 2em 5em;
+}
+.business-partner-heading{
+    grid-area: business-partner-heading;
+    width: 430px;
+}
+.business-partner-info{
+    grid-area: business-partner-info;
+    width: 580px;
+}
+.business-partner-headline{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'business-partner-heading business-partner-info';
+}
+.business-planner-1{
+    grid-area: business-planner-1;
+}
+.business-planner-2{
+    grid-area: business-planner-2;
+}
+.business-planner-3{
+    grid-area: business-planner-3;
+}
+.business-planner-1 ,.business-planner-2 ,.business-planner-3{
+    width: 364px;
+    margin: 0;
+}
+.business-planner-1 > img , .business-planner-2 > img, .business-planner-3 > img{
+    width: 100%;
+    height: 413px;
+    border-radius: 5px;
+}
+.business-planner-1 > figcaption , .business-planner-2 > figcaption, .business-planner-3 > figcaption{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    color: #F5F5F5;
+    position: relative;
+    bottom: 35%;
+    width: 75px;
+    left:23%;
+}
+#business-partner-photos{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'business-planner-1 business-planner-2 business-planner-3';
+    height: 440px;
+}
+
+.get-in-touch-heading{
+    grid-area: get-in-touch-heading;
+    width: 430px;
+}
+.get-in-touch-info{
+    grid-area: get-in-touch-info;
+    width: 580px;
+}
+.get-in-touch-headline{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'get-in-touch-heading get-in-touch-info';
+}
+#contact-form{
+    background-color: #E5E5E5;
+    height: 600px;
+    padding: 35px;
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+#contact-form > div > input[type="text"] , #contact-form > div > input[type="email"] {
+    width: 370px;
+    height: 39px;
+}
+#contact-form > div > input[name="first-name"] , #contact-form > div > input[name="last-name"] {
+    width: 470px;
+}
+.contact-form-btn{
+    position: relative;
+    padding: 15px;
+    background-color: #F54901;
+    color: #ffffff !important;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: 150px;
+    float: right;
+
+}
+
+.contact-form-btn:hover{
+    color: black !important
 }
 
 /** end of contact us **/
