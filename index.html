@@ -26,7 +26,7 @@
         <nav id="header-nav" aria-label="Main navigation">
             <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
             <ul class="menu-links">
-                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li class="active"><a href="index.html"><strong>Home</strong></a></li>
                 <li><a href="about.html"><strong>About</strong></a></li>
                 <li><a href="menu.html"><strong>Menu</strong></a></li>
                 <li><a href="events.html"><strong>Events</strong></a></li>
@@ -92,13 +92,29 @@
         <h2>Our bestselling specialities</h2>
         <div class="popular-menu">
             <figure class="menu-image1">
-                <img src="images/icecream.jpeg" alt="cup of icecream">
+                <a href="menu.html">
+                    <img src="images/lemon-tarte.png" alt="Lemon Tarte with Raspberry Syrup">
+                </a>
+                <figcaption>
+                    Lemon Tarte with Raspberry Syrup
+                </figcaption>
             </figure>
             <figure class="menu-image2">
-                <img src="images/steak.jpeg" alt="roasted beef steak">
+                <a href="menu.html">
+                    <img src="images/steak.png" alt="roasted beef steak">
+                </a>
+                <figcaption>
+                    One Pan Grilled Steak and Vegetables
+                </figcaption>
             </figure>
+
             <figure class="menu-image3">
-                <img src="images/waffle.jpeg" alt="a waffle on a plate">
+                <a href="menu.html">
+                    <img src="images/waffle.jpeg" alt="roasted beef steak">
+                </a>
+                <figcaption>
+                    Fresh Fruit Waffles
+                </figcaption>
             </figure>
         </div>
     </section>
@@ -120,8 +136,16 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery">
-            <figure id="big-image"><img src="images/big-galley-photo.jpeg" alt="an empty diner"></figure>
-            <figure class="gallery-image1"><img src="images/galley-photo-1.jpeg" alt="artist mixing colors"></figure>
+            <figure id="big-image">
+                <a href="gallery.html">
+                    <img src="images/big-galley-photo.jpeg" alt="an empty diner">
+                </a>
+            </figure>
+            <figure class="gallery-image1">
+                <a href="gallery.html">
+                    <img src="images/galley-photo-1.jpeg" alt="artist mixing colors">
+                </a>
+            </figure>
         </div>
 
     </section>
@@ -132,14 +156,14 @@
     <section id="events">
         <div>
             <h2>Upcoming Events</h2>
-            <p>We love bringing you great music and programming, plus live concerts, workshops and cultural initiatives</p>
+            <p>We love bringing you great music, art activities, live concerts, workshops and cultural initiatives</p>
         </div>
         <div class="events-images">
             <div class="event-image1">
                 <figure>
                     <img src="images/event-1.png" alt="an artist making a sketch">
                 </figure>
-                <div class="event-info">
+                <div id="event-info-box-1" class="event-info">
                     <p>les fantastique art & experiences</p>
                     <p>fri - 6:00pm onwards</p>
                 </div>
@@ -148,7 +172,7 @@
                 <figure>
                     <img src="images/event-2.jpeg" alt="a stage with drams and a microphone">
                 </figure>
-                <div class="event-info">
+                <div id="event-info-box-2" class="event-info">
                     <p>jazz & co</p>
                     <p>fri - 6:00pm onwards</p>
                 </div>
