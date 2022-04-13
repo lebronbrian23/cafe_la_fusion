@@ -287,14 +287,17 @@ main{
     font-family: 'Work Sans';
     font-size: 19px;
 }
+.no-border > li {
+    border-right: none !important;
+    width: 12em;
+}
+
 .submenu-links > li > a {
     position: relative;
     bottom: 8px;
 }
 .submenu-links > li > a > strong{
     color: #ffffff;
-
-
 }
 /** slogan */
 #slogan{
@@ -529,28 +532,28 @@ main{
 
 /* menu page styles */
 
-#menu-list {
-    margin: 0em 5em;
-}
 .menu-page-image1{
     grid-area: menu-page-image1;
-    position: relative;
-    top:4em;
 }
 .menu-page-image1 > img{
     width: 699px;
-    height: 540px;
+    height: 640px;
     border-radius: 6px;
     position: relative;
     right: -30px;
 }
-.menu-description{
-    grid-area: menu-description;
+.menu-description-left{
+    grid-area: menu-description-left;
     position: relative;
     left: 5em;
 }
+.menu-description-right{
+    grid-area: menu-description-right;
+    position: relative;
+    right: 7em;
+}
 h3 > strong{
-    color: #000;
+    color: red;
     line-height: 100px;
     align-items: center;
     letter-spacing: 0.2px;
@@ -562,71 +565,106 @@ h3 > span{
     letter-spacing: 0.2px;
     font-size: 24px;
     padding-left: 2em;
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: lighter;
+
 }
-.menu-description > p  , .menu-description >table , .chef-bio > p ,
-.menu-image1 > figcaption ,.menu-image2 > figcaption ,.menu-image3 > figcaption{
-    font-family:   'Work Sans';
+.menu-description-left > p  ,.menu-description-right > p  ,  table , .chef-bio > p ,
+.menu-image1 > figcaption ,.menu-image2 > figcaption ,.menu-image3 > figcaption {
+    font-family: 'Work Sans';
     font-size: 16px;
+}
+.menu-description-left > p , .menu-description-right > p{
+    font-weight: bold;
 }
 .menu-item-1{
     display: grid;
-    grid-template-areas:  'menu-description  menu-page-image1';
+    grid-template-areas:  'menu-description-left  menu-page-image1';
     gap: 40px;
     justify-content: center;
     padding:30px;
+    height: 590px;
 }
-.menu-description > table {
+table {
     width: 550px;
 }
- .menu-description >table > tbody > tr{
-     height: 2em;
+ table > tbody > tr{
+     height: 3em;
  }
 
 .menu-page-image2{
     grid-area: menu-page-image2;
-    position: relative;
-    top:5em;
 }
 .menu-page-image2 > img{
-    width: 445px;
-    height: 600px;
+    width: 699px;
+    height: 640px;
     border-radius: 6px;
+    position: relative;
+    left: -60px;
 }
 
 .menu-item-2{
     display: grid;
-    grid-template-areas:  'menu-page-image2 menu-description';
+    grid-template-areas:  'menu-page-image2 menu-description-right';
     gap: 40px;
     justify-content: center;
-    padding:30px;
+}
+
+#desserts{
+    position: relative;
+    margin-top:120px
+}
+.menu-item-4{
+    display: grid;
+    grid-template-areas:  'menu-page-image4 menu-description-right';
+    gap: 40px;
+    justify-content: center;
+
 }
 
 .menu-page-image4 > img{
-    width: 445px;
-    height: 460px;
+    width: 699px;
+    height: 640px;
     border-radius: 6px;
-}
-.menu-page-image4{
     position: relative;
-    top:3em;
+    left: -80px;
+}
+.menu-item-4 > .menu-description-right{
+    position: relative;
+    right: 4.5em;
 }
 .menu-page-image5 > img{
-    width: 445px;
-    height: 628px;
+    width: 699px;
+    height: 721px;
     border-radius: 6px;
+    position: relative;
+    right: -30px;
 }
 .menu-page-image5{
     position: relative;
     top:2em;
 }
 .menu-page-image6 > img{
-    width: 445px;
-    height: 628px;
+    width: 699px;
+    height: 740px;
     border-radius: 6px;
-}
-.menu-page-image6{
     position: relative;
-    top:2em;
+    left: -80px;
+}
+.menu-item-6{
+    display: grid;
+    grid-template-areas:  'menu-page-image6 menu-description-right';
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+    top:10em;
+    height: 50em;
+}
+.menu-item-6 > .menu-description-right{
+    position: relative;
+    top: 4em;
+    right: 4.5em;
 }
 /**featured patterns */
 #featured-patterns{
