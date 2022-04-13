@@ -43,7 +43,7 @@ a:visited{
     color: black
 }
 a:hover{
-    color: chocolate
+    color: darkblue;
 }
 a:active{
     color: fuchsia
@@ -71,7 +71,8 @@ strong{
 */
 #logo{
     font-size:1.3em;
-    margin: 10px 15px 15px 10px;
+    /*margin: 10px 55px 15px 10px;*/
+    margin: 10px 6em 5px 2em;
     grid-area: logo;
     white-space: nowrap;
     color: #ffffff;
@@ -97,7 +98,7 @@ strong{
 .nav-container{
     display: grid;
     grid-template-areas: 'logo nav-links';
-    height: 4em;
+    height: 6em;
     align-items:center;
     width: auto;
 }
@@ -110,7 +111,11 @@ nav li {
     padding: 0.9em;
     position:relative;
     font-family: 'Bebas Neue';
-
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 0.04em;
 }
 .menu-toggle{
     display: none;
@@ -277,7 +282,7 @@ main{
 .learn-more-btn{
     width: 180px;
     height: 44px;
-    background: #FFFFFF;
+    background: #F15A24;
     box-shadow: 0 0 4.87884px 0.975767px rgba(102, 100, 100, 0.27);
     border-radius: 4px;
     padding: 10px;
@@ -583,9 +588,7 @@ h3 > span{
 }
 /**featured patterns */
 #featured-patterns{
-    padding: 10px;
     text-align: center;
-    background: #F3F6F9;
     height: 278px;
 }
 .pattern-logo1{
@@ -607,7 +610,8 @@ h3 > span{
     gap: 120px;
     justify-content: center;
     padding:30px;
-
+    background-color: #E9EDF1;
+    height: 105px;
 }
 .pattern-logo1,  .pattern-logo3 , .pattern-logo4 , .pattern-logo2{
     height: 60px;
@@ -699,8 +703,8 @@ h3 > span{
     position: relative;
     padding: 15px;
     background-color: #F54901;
-    color: #ffffff;
     border-radius: 4px;
+    color: #ffffff;
 }
 .monthly-calender:hover {
     color: black
@@ -815,8 +819,8 @@ h3 > span{
     width: 600px !important;
 }
 .featured-artist-1 > img ,.featured-artist-2 > img , .featured-artist-3 > img{
-    width: 210px;
-    height: 432px;
+    width: 200px;
+    height: 372px;
     border-radius: 5px;
 }
 #featured-artist-photos{
