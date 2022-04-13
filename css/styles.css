@@ -287,13 +287,48 @@ main{
 }
 /** about us page */
 .videos{
-    background-color: #BFE4FF;
     grid-area: videos;
-    width: 568px;
+}
+#big-video-thumbnail{
+    grid-area: big-video-thumbnail;
+}
+.big-video-thumbnail-1{
+   margin: 0;
+}
+.big-video-thumbnail-1 > img{
+    height: 359px;
+    border-radius: 3px;
+}
+
+.small-thumbnail-1{
+    grid-area: small-thumbnail-1;
+    margin: 0;
+}
+.small-thumbnail-2{
+    grid-area: small-thumbnail-2;
+    margin: 0;
+}
+.small-thumbnail-3{
+    grid-area: small-thumbnail-3;
+    margin: 0;
+}
+.small-thumbnail-1 > img , .small-thumbnail-2 > img ,.small-thumbnail-3 > img{
+    width: 167px;
+    height: 127px;
+    border-radius: 3px;
+}
+
+#small-video-thumbnail{
+    display: grid;
+    grid-template-areas: 'small-thumbnail-1 small-thumbnail-2 small-thumbnail-3';
+    grid-template-columns:  176px 176px 176px;
+    gap: 10px;
+    margin-top: 15px;
+
 }
 .story{
     grid-area: story;
-    width: 568px;
+    width: 506px;
 }
 #our-story{
     display: grid;
@@ -316,10 +351,12 @@ main{
 #our-chef{
     grid-template-areas: 'chef-bio chef-pic';
     display: grid;
-    gap:20px
+    gap:20px;
+    height:670px;
 }
 .chef-bio{
     grid-area: chef-bio;
+    width: 589px;
 }
 .chef-bio > h2 , .story > h2{
     color: red;
@@ -339,8 +376,12 @@ main{
 }
 .chef-pic{
     grid-area: chef-pic;
-    width: 501px;
-    background-color: #BFE4FF;
+}
+.chef-pic > figure > img{
+    width: 715px;
+    height: 741px;
+    position: relative;
+    right: 170px;
 }
 #view-our-menu{
     padding-top: 45px;
@@ -355,6 +396,49 @@ main{
 .view-our-menu-btn:hover{
     color: black !important
 }
+
+#news-and-media{
+    margin-bottom: 30px;
+    height: 550px;
+}
+.media-1{
+    grid-area: media-1;
+}
+.media-2{
+    grid-area: media-2;
+}
+.media-3{
+    grid-area: media-3;
+}
+.media-4{
+    grid-area: media-4;
+}
+.media{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 'media-1 media-2 media-3 media-4';
+    grid-template-columns: 270px 270px 270px 270px;
+    font-size: 14px;
+    height: 368px;
+
+
+}
+.media-1 > figure , .media-2 > figure ,
+.media-3 > figure , .media-4 > figure  {
+    margin: 0;
+}
+
+.media-1 > a , .media-2 > a,
+.media-3 > a , .media-4 >  a {
+    text-transform: uppercase !important;
+}
+.media-1 > figure >  img , .media-2 > figure >  img ,
+.media-3 > figure >  img , .media-4 > figure >  img {
+    width: 266px;
+    height: 195px;
+    border-radius: 3px;
+}
+
 /** end of menu **/
 
 /** New and media **/
@@ -362,8 +446,7 @@ main{
     font-family: 'Work Sans';
 }.
 .media-1  > figure > figcaption{
-    font-weight: bold !important;
-    font-size: 50px !important;
+
  }
 /**End of news and media **/
 /** popular-menu */
